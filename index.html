@@ -106,7 +106,7 @@
   document.querySelectorAll('[data-view]').forEach(el => el.addEventListener('click', () => show(el.dataset.view)));
   document.getElementById('reset').addEventListener('click', () => {
     try {
-      localStorage.removeItem('trafikskolan-demo-v1');
+      localStorage.removeItem('trafikskolan-demo-v2');
       Object.keys(sessionStorage).filter(k => k.startsWith('trafikskolan-')).forEach(k => sessionStorage.removeItem(k));
     } catch (e) {}
     const t = document.getElementById('toast');
